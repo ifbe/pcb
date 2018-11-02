@@ -1,0 +1,155 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR0101
+U 1 1 5BDC3F68
+P 5650 950
+F 0 "#PWR0101" H 5650 800 50  0001 C CNN
+F 1 "VCC" H 5667 1123 50  0000 C CNN
+F 2 "" H 5650 950 50  0001 C CNN
+F 3 "" H 5650 950 50  0001 C CNN
+	1    5650 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 950  3150 950 
+Wire Wire Line
+	3150 950  3150 1950
+Wire Wire Line
+	5650 950  5650 1950
+Connection ~ 5650 950 
+Wire Wire Line
+	5650 950  8250 950 
+Wire Wire Line
+	8250 950  8250 1950
+$Comp
+L pspice:MNMOS M1
+U 1 1 5BDC407D
+P 3050 2150
+F 0 "M1" H 3338 2196 50  0000 L CNN
+F 1 "MNMOS" H 3338 2105 50  0000 L CNN
+F 2 "Package_SO:MSOP-12_3x4mm_P0.65mm" H 3025 2150 50  0001 C CNN
+F 3 "" H 3025 2150 50  0001 C CNN
+	1    3050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:MNMOS M3
+U 1 1 5BDC40C4
+P 5550 2150
+F 0 "M3" H 5838 2196 50  0000 L CNN
+F 1 "MNMOS" H 5838 2105 50  0000 L CNN
+F 2 "Package_SO:MSOP-12_3x4mm_P0.65mm" H 5525 2150 50  0001 C CNN
+F 3 "" H 5525 2150 50  0001 C CNN
+	1    5550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:MNMOS M5
+U 1 1 5BDC41AA
+P 8150 2150
+F 0 "M5" H 8438 2196 50  0000 L CNN
+F 1 "MNMOS" H 8438 2105 50  0000 L CNN
+F 2 "Package_SO:MSOP-12_3x4mm_P0.65mm" H 8125 2150 50  0001 C CNN
+F 3 "" H 8125 2150 50  0001 C CNN
+	1    8150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:MNMOS M2
+U 1 1 5BDC424B
+P 3050 4150
+F 0 "M2" H 3338 4196 50  0000 L CNN
+F 1 "MNMOS" H 3338 4105 50  0000 L CNN
+F 2 "Package_SO:MSOP-12_3x4mm_P0.65mm" H 3025 4150 50  0001 C CNN
+F 3 "" H 3025 4150 50  0001 C CNN
+	1    3050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:MNMOS M4
+U 1 1 5BDC42A6
+P 5550 4150
+F 0 "M4" H 5838 4196 50  0000 L CNN
+F 1 "MNMOS" H 5838 4105 50  0000 L CNN
+F 2 "Package_SO:MSOP-12_3x4mm_P0.65mm" H 5525 4150 50  0001 C CNN
+F 3 "" H 5525 4150 50  0001 C CNN
+	1    5550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:MNMOS M6
+U 1 1 5BDC4315
+P 8150 4150
+F 0 "M6" H 8438 4196 50  0000 L CNN
+F 1 "MNMOS" H 8438 4105 50  0000 L CNN
+F 2 "Package_SO:MSOP-12_3x4mm_P0.65mm" H 8125 4150 50  0001 C CNN
+F 3 "" H 8125 4150 50  0001 C CNN
+	1    8150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2350 5650 2550
+Wire Wire Line
+	8250 2350 8250 2550
+Wire Wire Line
+	3150 2350 3150 2550
+$Comp
+L power:GND #PWR0102
+U 1 1 5BDC44FC
+P 5650 5250
+F 0 "#PWR0102" H 5650 5000 50  0001 C CNN
+F 1 "GND" H 5655 5077 50  0000 C CNN
+F 2 "" H 5650 5250 50  0001 C CNN
+F 3 "" H 5650 5250 50  0001 C CNN
+	1    5650 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4350 8250 4850
+Wire Wire Line
+	8250 4850 5650 4850
+Connection ~ 5650 4850
+Wire Wire Line
+	5650 4850 5650 4350
+Wire Wire Line
+	5650 4850 3150 4850
+Wire Wire Line
+	3150 4850 3150 4350
+Wire Wire Line
+	5650 5250 5650 4850
+Wire Wire Line
+	3250 2350 3250 2550
+Wire Wire Line
+	3250 2550 3150 2550
+Connection ~ 3150 2550
+Wire Wire Line
+	3150 2550 3150 3950
+Wire Wire Line
+	5750 2350 5750 2550
+Wire Wire Line
+	5750 2550 5650 2550
+Connection ~ 5650 2550
+Wire Wire Line
+	5650 2550 5650 3950
+Wire Wire Line
+	8350 2350 8350 2550
+Wire Wire Line
+	8350 2550 8250 2550
+Connection ~ 8250 2550
+Wire Wire Line
+	8250 2550 8250 3950
+$EndSCHEMATC

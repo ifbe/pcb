@@ -1,0 +1,125 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery BT?
+U 1 1 5C544BE9
+P 1300 3500
+F 0 "BT?" H 1408 3546 50  0000 L CNN
+F 1 "Battery" H 1408 3455 50  0000 L CNN
+F 2 "" V 1300 3560 50  0001 C CNN
+F 3 "~" V 1300 3560 50  0001 C CNN
+	1    1300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5C544C62
+P 3000 3450
+F 0 "L?" H 3053 3496 50  0000 L CNN
+F 1 "L" H 3053 3405 50  0000 L CNN
+F 2 "" H 3000 3450 50  0001 C CNN
+F 3 "~" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:MNMOS M?
+U 1 1 5C544CFA
+P 2100 2200
+F 0 "M?" V 2432 2200 50  0000 C CNN
+F 1 "MNMOS" V 2523 2200 50  0000 C CNN
+F 2 "" H 2075 2200 50  0001 C CNN
+F 3 "" H 2075 2200 50  0001 C CNN
+	1    2100 2200
+	0    -1   1    0   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5C544E1C
+P 4000 2300
+F 0 "D?" H 4000 2035 50  0000 C CNN
+F 1 "DIODE" H 4000 2126 50  0000 C CNN
+F 2 "" H 4000 2300 50  0001 C CNN
+F 3 "" H 4000 2300 50  0001 C CNN
+	1    4000 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C544F37
+P 5100 3450
+F 0 "C?" H 5215 3496 50  0000 L CNN
+F 1 "C" H 5215 3405 50  0000 L CNN
+F 2 "" H 5138 3300 50  0001 C CNN
+F 3 "~" H 5100 3450 50  0001 C CNN
+	1    5100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C544FC2
+P 6900 3450
+F 0 "R?" H 6970 3496 50  0000 L CNN
+F 1 "R" H 6970 3405 50  0000 L CNN
+F 2 "" V 6830 3450 50  0001 C CNN
+F 3 "~" H 6900 3450 50  0001 C CNN
+	1    6900 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3700 1300 4600
+Wire Wire Line
+	1300 4600 3000 4600
+Wire Wire Line
+	6900 4600 6900 3600
+Wire Wire Line
+	5100 3600 5100 4600
+Connection ~ 5100 4600
+Wire Wire Line
+	5100 4600 6900 4600
+Wire Wire Line
+	3000 3600 3000 4600
+Connection ~ 3000 4600
+Wire Wire Line
+	3000 4600 5100 4600
+Wire Wire Line
+	1900 2300 1300 2300
+Wire Wire Line
+	1300 2300 1300 3300
+Wire Wire Line
+	2300 2300 2500 2300
+Wire Wire Line
+	2500 2300 2500 2400
+Wire Wire Line
+	2500 2400 2300 2400
+Connection ~ 2500 2300
+Wire Wire Line
+	2500 2300 3000 2300
+Wire Wire Line
+	3000 2300 3000 3300
+Connection ~ 3000 2300
+Wire Wire Line
+	3000 2300 3800 2300
+Wire Wire Line
+	4200 2300 5100 2300
+Wire Wire Line
+	6900 2300 6900 3300
+Wire Wire Line
+	5100 2300 5100 3300
+Connection ~ 5100 2300
+Wire Wire Line
+	5100 2300 6900 2300
+$EndSCHEMATC
